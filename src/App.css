@@ -1,6 +1,14 @@
 .App {
   text-align: center;
 }
+.bg-full{
+  height: 100vh;
+  background-color: #03274f;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .App-logo {
   height: 40vmin;
@@ -26,6 +34,16 @@
 
 .App-link {
   color: #61dafb;
+}
+.square{
+  border-radius: 0.5rem;
+  margin:0.3em;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f4077;
 }
 
 @keyframes App-logo-spin {
