@@ -1,11 +1,18 @@
+
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import List from "../components/about/List";
+import TodoContext from "../context/TodoContext";
 
 
 function About(){
+    const {todo} = useContext(TodoContext)
+    console.log(todo);
     return (
     <>
-        <h1>About</h1>
-        <Link to='/' ><h1>Home</h1></Link>
+      
+        <List names={todo} />
+       
     </>
     )
 }

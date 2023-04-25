@@ -1,11 +1,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Router from './router';
+import {TodoProvider} from './context/TodoContext';
 
 function App() {
 
     return (
-        <Router />
+        <TodoProvider>
+            <Router />
+        </TodoProvider>
     )
 
 }
