@@ -1,5 +1,4 @@
 
-
 const  TodoReducer = (state,payload)=>{
     switch (payload.type) {
       case "GET_TODO":
