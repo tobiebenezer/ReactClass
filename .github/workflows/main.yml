@@ -1,7 +1,8 @@
 name: Ci
 on:
   push:
-    branches: [!main]
+    branches-ignore:
+      - main
     
 jobs:
   pull-from-other-branch:
